@@ -25,7 +25,7 @@ body {
 
 #reg-right {
     width: 60%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(imgs/registerbg.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/registerbg.png);
     background-size: cover, cover;
     border-radius: 0 10px 10px 0; 
     color: #001d3d;
@@ -307,4 +307,5 @@ body {
         opacity: 100%;
     }
 }
+
 
