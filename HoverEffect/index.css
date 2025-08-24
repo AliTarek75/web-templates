@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+#c {
+    display: flex;
+    min-height: 97svh;
+    max-width: calc(var(--_card-width)*3 + 2*var(--_gap));
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: var(--_gap);
+    margin-inline: auto;
+
+    --_card-width: 175px;
+    --_gap: 8px;
+
+}
+
+#c > div {
+    background-color: black;
+    width: var(--_card-width);
+    height: var(--_card-width);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.15) -32%, black 10rem);
+
+    --_border-postition-x: 0;
+    --_border-postition-y: 0;
+}
+
+
+#c > div::before {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    transition: 0.2s background-color;
+
+    width: var(--_card-width);
+    aspect-ratio: 1 / 1;
+}
+
+#c > div:hover::before {
+    background-color: rgba(30, 30, 30, 0.4)
+}
+
+#c > div::after {
+    background-color: black;
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    
+    inset: -1px;
+
+    background-image: radial-gradient(circle, white -17%, black 10rem);  
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: var(--_border-postition-x) var(--_border-postition-y);
+    z-index: -1;
+}
