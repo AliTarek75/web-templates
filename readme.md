@@ -4,4 +4,4 @@ This is a collection of templates and UI components that I make while learning w
 
 ## Current Templates
 - [Auth Template](https://AliTarek75.github.io/web-templates/LoginTemplate/register.html)  
-  A simple login and signup page built with HTML/CSS.
+  A simple responsive login and signup page built with HTML/CSS.
